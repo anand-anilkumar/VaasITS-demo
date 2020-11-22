@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "beeone-machinetest"
+    }
+  },
+  "defaultProject": "beeone-machinetest",
+  "cli": {
+    "analytics": false
+  }
 }

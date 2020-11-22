@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    id="sidenav"
+    #sidenav
+    mode="side"
+    [class.menu-opened]="isMenuOpened"
+    [class.menu-closed]="!isMenuOpened"
+    opened>
+    <app-side-nav></app-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content [ngStyle]="{'margin-left.px' : contentMargin}">
+    <app-top-nav (sideNavToggled)="onToggle()"></app-top-nav>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
