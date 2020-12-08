@@ -20,6 +20,11 @@ const routes: Routes = [
         path: 'e-wallet',
         loadChildren: () =>
           import('./e-wallet/e-wallet.module').then(m => m.EWalletModule)
+      },
+      {
+        path: 'posts',
+        loadChildren: () =>
+          import('./posts/posts.module').then(m => m.PostsModule)
       }
     ]
   }
